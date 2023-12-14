@@ -21,7 +21,7 @@ body {
     }
     .container {        
         flex-direction: row; gap: 25px;
-        min-height: 90vh; 
+        min-height: 95vh; 
         .color-picker-card, .color-res {      
             position: relative;      
             background-color: $asparagus; box-shadow:  0px 0px 5px 5px rgba(127, 176, 105, 1);

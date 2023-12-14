@@ -26,7 +26,7 @@ body .container, body .buttons-container, body .color-selected-container, body #
 body .container {
   flex-direction: row;
   gap: 25px;
-  min-height: 90vh;
+  min-height: 95vh;
 }
 body .container .color-picker-card, body .container .color-res {
   position: relative;
