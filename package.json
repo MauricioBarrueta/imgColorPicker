@@ -1,0 +1,23 @@
+{
+  "name": "image-color-picker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MauricioBarrueta/imgColorPicker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MauricioBarrueta/imgColorPicker/issues"
+  },
+  "homepage": "https://github.com/MauricioBarrueta/imgColorPicker#readme",
+  "dependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
