@@ -6,106 +6,99 @@
 }
 
 /* Color Palette */
-$asparagus: #7FB069;
-$lemmonChifon: #FFFBBD;
-$fawn: #E6AA68;
-$chiliRed: #CA3C25;
-$smokyBlack: #1D1A05;
+$engineeringOrange: #B80C09;
+$indigoDye: #0B4F6C;
+$processCyan: #01BAEF;
+$ghostWhite: #FBFBFF;
+$richBlack: #040F16;
 
 body {
-    background-color: $smokyBlack; padding: 1em;
-
+    background-color: $richBlack; padding: 1em;
     span, small { user-select: none; cursor: default; }
+
     .container, .buttons-container, .color-selected-container, #color-preview { 
         display: flex; justify-content: center; align-items: center; flex-wrap: wrap; 
     }
     .container {        
-        flex-direction: row; gap: 25px;
-        min-height: 95vh; 
-        .color-picker-card, .color-res {      
-            position: relative;      
-            background-color: $asparagus; box-shadow:  0px 0px 5px 5px rgba(127, 176, 105, 1);
-            width: 50%; min-width: 450px; height: auto;         
-            padding: 1em; border-radius: 10px; color: white;     
-            
+        flex-direction: row; min-height: 90vh;      
+        .color-picker-card {      
+            position: relative; width: 450px; height: auto;         
+            padding: 1em; border-radius: 5px; 
+            background-color: $indigoDye; color: $ghostWhite;   
             #alertText {
-                background-color: white; border: 1px solid $smokyBlack;
+                background-color: $ghostWhite; color: $engineeringOrange;
                 padding: 5px 0; border-radius: 5px; margin-bottom: 5px;                
-                text-align: center; font-size: 14px; font-weight: bold; color: $chiliRed;
+                text-align: center; font-size: 14px; 
             }
-
-            .title {
-                width: 100%; display: inline-block;
-                text-align: center; font-size: 15px; font-weight: bold; letter-spacing: 1px; color: $smokyBlack;
-                padding-bottom: 5px; border-bottom: 1px solid $smokyBlack;
-            }    
-
-            .img-container {
-                width: 100%; 
-                margin: 0 auto; border-radius: 5px; border: 1px solid $smokyBlack;
-                text-align: center;
-                background-color: white;
+            .upload-image-form {                   
+                text-align: center; border-radius: 5px;
+                cursor: pointer; transition: 0.35s; 
+                &:hover {
+                    background-color: $ghostWhite;
+                    box-shadow: inset 0px 0px 10px 5px rgba(0,0,0,0.75);
+                    p { color: $richBlack !important; border-bottom: none !important; }
+                }                 
                 img {
-                    width: 350px; height: auto
-                }
-            }          
-    
-            .buttons-container {
-                flex-wrap: wrap; justify-content: space-around;
-                padding: 5px; margin: 5px 0; margin-bottom: 0;                
-                .upload-image, button { margin-top: 5px; }            
-                .upload-image {
-                    width: 90%;
-                    border: 1px solid $smokyBlack;
-                    cursor: pointer;
-                }                
-                button { 
-                    width: fit-content; 
-                    background-color: $chiliRed;
-                    &:hover { background-color: $fawn !important; color: $smokyBlack; }
-                }               
-            }
-            small {
-                position: absolute; left: 0; width: 100%;
-                font-size: 11px; text-align: center; color: $smokyBlack;
-                opacity: .85;
-            }
-        }
-
-        .color-res {
-            width: 45%; padding: 0.5rem;
-            .color-selected-container {                                
-                padding: 0.5rem; gap: 2px; border-radius: 5px;
-                .input-group {
-                    width: 33%; margin-top: 10px;                     
-                    &:nth-child(2) { width: 100%; }
-                    span { height: 35px; cursor: default; }
-                    #color-preview {                        
-                        user-select: none; cursor: default;  
-                        &::placeholder { font-size: 12px; letter-spacing: 1px; }                      
+                    width: 75%; height: auto;     
+                    padding: 0.5rem;   
+                }            
+                .form-text {
+                    p {
+                        font-size: 12px; letter-spacing: 1px; color: $ghostWhite;
+                        padding-bottom: 10px; transition: 0.25s;
+                        border-bottom: 2px dashed $ghostWhite;
                     }
+                }
+            }            
+            #color-picker {
+                width: 100%;
+                background-color: $engineeringOrange; border-color: $ghostWhite;
+                &:hover { background-color: #bb2d3b; }
+            }            
+            small {
+                width: 100%; display: inline-block;
+                font-size: 10px; text-align: center; letter-spacing: 1px;
+                opacity: .5; color: $ghostWhite;
+            }
+
+            .color-selected-container {                                
+                margin-top: 10px; 
+                span { 
+                    font-size: 14px; letter-spacing: 1px;
+                }
+                .input-group {
+                    width: 32%; margin-top: 10px; margin-inline: 2px;                     
+                    &:nth-child(2) { width: 100%; }
+
+                    #color-icon { 
+                        height: 35px; 
+                        cursor: default; background-color: $richBlack; 
+                    }
+                    #color-preview {                        
+                        user-select: none; cursor: default; line-height: 2; 
+                        &::placeholder { font-size: 11px; letter-spacing: 1px; }                      
+                    }
+                    
                     &:nth-child(3) input {
                         text-transform: uppercase !important;
                         &::placeholder { text-transform: none; }                        
                     }
-                    input, button { border-color: $smokyBlack; }
+                    input, #color-icon, button { border: 1px solid $ghostWhite !important; }
                     input {     
                         height: 35px;
-                        font-size: 12px; text-align: center; line-height: normal !important;
-                        padding: 5px;
-                        &::placeholder { font-size: 14px; }  
-                        &::selection { background-color: $chiliRed; color: white; }                      
+                        font-size: 10.5px; text-align: center; 
+                        line-height: normal !important; padding: 5px;
+                        &::placeholder { font-size: 14px; }                                             
                     }
                     button {
-                        width: 28px;
-                        font-size: 11px;
+                        width: 25px; font-size: 10px;
                         padding: 5px;
-                        background-color: $chiliRed; 
-                        &:hover { background-color: $fawn; color: $smokyBlack; }
+                        background-color: $engineeringOrange;
+                        &:hover { background-color: #bb2d3b; }
                     }
                 }                              
             }
         }
-        .hidden { display: none; }
+        .hidden { display: none; }            
     }
 }
