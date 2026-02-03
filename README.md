@@ -4,4 +4,5 @@
 
 🔗 https://mauriciobarrueta.github.io/imgColorPicker/
 
-![color-picker](https://github.com/user-attachments/assets/9c74dc9d-1080-4c69-8557-6821481aa1af)
+
+<img width="1366" height="623" alt="color-picker" src="https://github.com/user-attachments/assets/d3fd9f13-9a0e-43c1-a668-62d23c6ec34a" />
