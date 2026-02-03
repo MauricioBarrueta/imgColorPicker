@@ -17,12 +17,12 @@ body {
     .container {        
         flex-direction: row; min-height: 95vh;      
         .color-picker-card {      
-            position: relative; width: 450px; height: auto;         
+            position: relative; width: 475px; height: auto;         
             padding: 1em; border-radius: 5px; 
             background-color: $indigoDye; color: $ghostWhite; border: 2px solid $ghostWhite; 
             #alertText {
                 background-color: $ghostWhite; color: $engineeringOrange;
-                padding: 5px 0; border-radius: 5px; margin-bottom: 5px;                
+                padding: 5px 0; border-radius: 5px; margin-bottom: 5px; cursor: default;           
                 text-align: center; font-size: 14px; 
             }
             .upload-image-form {                   
@@ -48,6 +48,7 @@ body {
             #color-picker {
                 width: 100%;
                 background-color: $engineeringOrange; border-color: $ghostWhite;
+                font-size: 14px;
                 &:hover { background-color: #bb2d3b; }
             }            
             small {
@@ -62,28 +63,25 @@ body {
                     font-size: 14px; letter-spacing: 1px;
                 }
                 .input-group {
-                    width: 32%; margin-top: 10px; margin-inline: 2px;                     
+                    width: 33%; 
+                    margin-top: 10px; margin-right: 2px;                
                     &:nth-child(2) { width: 100%; }
 
-                    #color-icon { 
-                        height: 35px; 
-                        cursor: default; background-color: $richBlack; 
-                    }
                     #color-preview {                        
                         user-select: none; cursor: default; line-height: 2; 
-                        &::placeholder { font-size: 11px; letter-spacing: 1px; }                      
+                        &::placeholder { font-size: 12px; letter-spacing: 1px; }                      
                     }
                     
                     &:nth-child(3) input {
                         text-transform: uppercase !important;
                         &::placeholder { text-transform: none; }                        
                     }
-                    input, #color-icon, button { border: 1px solid $ghostWhite !important; }
+                    input, button { border: 1px solid $ghostWhite !important; }
                     input {     
                         height: 35px;
-                        font-size: 10.5px; text-align: center; 
+                        font-size: 11px; text-align: center;
                         line-height: normal !important; padding: 5px;
-                        &::placeholder { font-size: 14px; }                                             
+                        &::placeholder { font-size: 12px; }                                             
                     }
                     button {
                         width: 25px; font-size: 10px;

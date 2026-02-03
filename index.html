@@ -20,17 +20,16 @@
         <input type="file" id="uploaded-image" accesskey="image/*" accept="image/png, image/jpeg" hidden>
         <img id="image" src="src/img/default.png">
         <div class="form-text">
-            <p id="upload-status">&#xe09a; | O da clic acá para cargar tu propia imagen | &#xe09a;</p>
+            <p id="upload-status">&#xe09a;&nbsp; O da clic aquí para cargar tu imagen &nbsp;&#xe09a;</p>
         </div>
       </form>
       <small>Presiona la tecla 'Esc' para cerrar el selector de color</small>
-      <button class="btn btn-danger" id="color-picker" title="Iniciar el selector de color">&#xf1fb;</button>     
+      <button class="btn btn-danger" id="color-picker" title="Iniciar el selector de color">&#xf1fb;&nbsp; Iniciar selector</button>     
 
       <!-- Color Models Code -->
       <div class="color-selected-container">
         <span class="title">Verifica el color seleccionado y copia el código:</span>
         <div class="input-group">
-          <span class="input-group-text btn btn-dark" id="color-icon" title="Vista previa">&#xf53f;</span>
           <input type="text" class="form-control" id="color-preview" placeholder="Vista previa del color" aria-describedby="color-icon" readonly>
         </div>
         <div class="input-group">
@@ -41,7 +40,7 @@
           <input type="text" class="form-control" placeholder="rgb():" aria-describedby="rgb" id="rgbCode" readonly>
           <button class="btn btn-danger" type="button" id="rgb" title="Copiar">&#xf0c5;</button>
         </div>
-        <div class="input-group">
+        <div class="input-group" style="margin-right: 0;">
           <input type="text" class="form-control" placeholder="rgba():" aria-describedby="rgba" id="rgbaCode" readonly>
           <button class="btn btn-danger" type="button" id="rgba" title="Copiar">&#xf0c5;</button>
         </div>        
