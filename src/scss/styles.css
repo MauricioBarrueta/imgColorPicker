@@ -29,7 +29,7 @@ body .container {
 }
 body .container .color-picker-card {
   position: relative;
-  width: 450px;
+  width: 475px;
   height: auto;
   padding: 1em;
   border-radius: 5px;
@@ -43,6 +43,7 @@ body .container .color-picker-card #alertText {
   padding: 5px 0;
   border-radius: 5px;
   margin-bottom: 5px;
+  cursor: default;
   text-align: center;
   font-size: 14px;
 }
@@ -78,6 +79,7 @@ body .container .color-picker-card #color-picker {
   width: 100%;
   background-color: #B80C09;
   border-color: #FBFBFF;
+  font-size: 14px;
 }
 body .container .color-picker-card #color-picker:hover {
   background-color: #bb2d3b;
@@ -99,17 +101,12 @@ body .container .color-picker-card .color-selected-container span {
   letter-spacing: 1px;
 }
 body .container .color-picker-card .color-selected-container .input-group {
-  width: 32%;
+  width: 33%;
   margin-top: 10px;
-  margin-inline: 2px;
+  margin-right: 2px;
 }
 body .container .color-picker-card .color-selected-container .input-group:nth-child(2) {
   width: 100%;
-}
-body .container .color-picker-card .color-selected-container .input-group #color-icon {
-  height: 35px;
-  cursor: default;
-  background-color: #040F16;
 }
 body .container .color-picker-card .color-selected-container .input-group #color-preview {
   -webkit-user-select: none;
@@ -119,11 +116,11 @@ body .container .color-picker-card .color-selected-container .input-group #color
   line-height: 2;
 }
 body .container .color-picker-card .color-selected-container .input-group #color-preview::-moz-placeholder {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 body .container .color-picker-card .color-selected-container .input-group #color-preview::placeholder {
-  font-size: 11px;
+  font-size: 12px;
   letter-spacing: 1px;
 }
 body .container .color-picker-card .color-selected-container .input-group:nth-child(3) input {
@@ -135,21 +132,21 @@ body .container .color-picker-card .color-selected-container .input-group:nth-ch
 body .container .color-picker-card .color-selected-container .input-group:nth-child(3) input::placeholder {
   text-transform: none;
 }
-body .container .color-picker-card .color-selected-container .input-group input, body .container .color-picker-card .color-selected-container .input-group #color-icon, body .container .color-picker-card .color-selected-container .input-group button {
+body .container .color-picker-card .color-selected-container .input-group input, body .container .color-picker-card .color-selected-container .input-group button {
   border: 1px solid #FBFBFF !important;
 }
 body .container .color-picker-card .color-selected-container .input-group input {
   height: 35px;
-  font-size: 10.5px;
+  font-size: 11px;
   text-align: center;
   line-height: normal !important;
   padding: 5px;
 }
 body .container .color-picker-card .color-selected-container .input-group input::-moz-placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 body .container .color-picker-card .color-selected-container .input-group input::placeholder {
-  font-size: 14px;
+  font-size: 12px;
 }
 body .container .color-picker-card .color-selected-container .input-group button {
   width: 25px;

@@ -8,10 +8,11 @@ window.onload = () => {
   colorPreview.style.background = 'white'
   /* Verifica si la API es compatible con el navegador o no */
   if (!window.EyeDropper) {
-      errorText.classList.remove('hidden')
-      colorContainer.classList.add('hidden')
-      colorPickerButton.disabled = true, uploadedImage.disabled = true
-      errorText.innerText = `\u{f071} EyeDropper API no es compatible con este navegador \u{f071}`
+    errorText.classList.remove('hidden')
+    colorContainer.classList.add('hidden')
+    colorPickerButton.disabled = true, uploadedImage.disabled = true
+    uploadImageForm.style.opacity = '0.5'; uploadImageForm.style.pointerEvents = 'none';
+    errorText.innerText = `\u{f071}\u{00A0} EyeDropper API no es compatible con este navegador`
     return
   } else { eyeDropper = new EyeDropper() }
 };
